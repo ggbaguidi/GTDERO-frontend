@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+  const history = useNavigate();
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -89,6 +92,7 @@ const Signup = () => {
             <button
               type="submit"
               className="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 focus:outline-none focus:ring focus:ring-purple-500"
+              onClick={()=> history("/login")}
             >
               Sign Up
             </button>

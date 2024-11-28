@@ -9,22 +9,56 @@ import Login from './components/Login';
 import Features from './components/Features';
 import Signup from './components/Signup';
 import Dashboard from './components/Dashboard';
+import ErrorPage from "./error-page";
+import Sites from './components/Sites';
+import Analytics from './components/Analytics';
+import Settings from './components/Settings';
+import Common from './components/dashboard/Common';
+import SiteDetail from './components/SiteDetail';
+import StrategyDisplay from './components/StrategyDisplay';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
 
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Routes>
-          <Route exact path="/" element={<Hero />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/dashboard" element={<Dashboard />} />
+          <Route exact path="/" element={<>
+            <Header />
+            <Hero />
+            <Features />
+          </>} errorElement={<ErrorPage />} />
+          <Route path="/about" element={<><Header /><AboutUs /></>} errorElement={<ErrorPage />} />
+          <Route path="/how-it-works" element={<HowItWorks />} errorElement={<ErrorPage />} />
+          <Route path="/login" element={<><Header /><Login /></>} errorElement={<ErrorPage />} />
+          <Route path="/signup" element={<><Header /><Signup /></>} errorElement={<ErrorPage />} />
+          <Route path="/dashboard" element={<Common><Dashboard /></Common>} errorElement={<ErrorPage />} />
+          <Route path='/features' element={<><Header /><Features /></>} errorElement={<ErrorPage />} />
+          <Route path="/sites" element={<Common><Sites /></Common>} />
+          <Route path="/analytics" element={<Common><Analytics /></Common>} />
+          <Route path="/settings" element={<Common><Settings /></Common>} />
+          <Route path="/sites/:siteId" element={<Common><SiteDetail /></Common>} />
+          <Route path="/strategy" element={<Common><StrategyDisplay /></Common>} />
         </Routes>
-        <Features />
         <Footer />
       </div>
     </Router>
