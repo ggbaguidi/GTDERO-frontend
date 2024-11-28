@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/GTDERO-frontend/static/css/main.cf8259f7.css",
+    "main.js": "/GTDERO-frontend/static/js/main.c821b043.js",
+    "static/js/453.8ab44547.chunk.js": "/GTDERO-frontend/static/js/453.8ab44547.chunk.js",
+    "static/media/co2-cloud.png": "/GTDERO-frontend/static/media/co2-cloud.c14e200cd875aad37c6b.png",
+    "static/media/logo-gtdero.png": "/GTDERO-frontend/static/media/logo-gtdero.df156e038edd41863303.png",
+    "static/media/antenna.png": "/GTDERO-frontend/static/media/antenna.0938cc8abd8106b3afb2.png",
+    "static/media/solar-panel.png": "/GTDERO-frontend/static/media/solar-panel.4314890f76c6a0f97af3.png",
+    "static/media/energy-consumption.png": "/GTDERO-frontend/static/media/energy-consumption.b00914cf3efe333eef42.png",
+    "static/media/battery.png": "/GTDERO-frontend/static/media/battery.88a7944574a895632327.png",
+    "index.html": "/GTDERO-frontend/index.html",
+    "main.cf8259f7.css.map": "/GTDERO-frontend/static/css/main.cf8259f7.css.map",
+    "main.c821b043.js.map": "/GTDERO-frontend/static/js/main.c821b043.js.map",
+    "453.8ab44547.chunk.js.map": "/GTDERO-frontend/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cf8259f7.css",
+    "static/js/main.c821b043.js"
+  ]
+}
