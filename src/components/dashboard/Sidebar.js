@@ -33,6 +33,11 @@ const Sidebar = () => {
             </Link>
           </li>
           <li className="mb-2">
+            <Link to="/users" className="block p-2 text-white hover:bg-purple-700 rounded">
+              Users
+            </Link>
+          </li>
+          <li className="mb-2">
             <Link to="/settings" className="block p-2 text-white hover:bg-purple-700 rounded">
               Settings
             </Link>

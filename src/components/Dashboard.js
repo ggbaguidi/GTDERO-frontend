@@ -10,7 +10,7 @@ const Dashboard = () => {
     <>
           <h1 className="text-2xl font-semibold text-gray-800">Dashboard Overview</h1>
               {/* Example stats section */}
-              <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6">
+              <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
                 <div className="bg-white p-6 rounded-lg shadow-md flex items-center justify-evenly">
                   <div className=''>
                     <img src={site} alt="Green Telecom" className="w-16 h-16" />

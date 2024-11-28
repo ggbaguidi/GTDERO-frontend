@@ -16,6 +16,7 @@ import Settings from './components/Settings';
 import Common from './components/dashboard/Common';
 import SiteDetail from './components/SiteDetail';
 import StrategyDisplay from './components/StrategyDisplay';
+import UserManagement from './components/User';
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -58,6 +59,7 @@ function App() {
           <Route path="/settings" element={<Common><Settings /></Common>} />
           <Route path="/sites/:siteId" element={<Common><SiteDetail /></Common>} />
           <Route path="/strategy" element={<Common><StrategyDisplay /></Common>} />
+          <Route path="/users" element={<Common><UserManagement /></Common>} />
         </Routes>
         <Footer />
       </div>

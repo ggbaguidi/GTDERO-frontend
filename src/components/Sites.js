@@ -13,11 +13,11 @@ const Sites = () => {
   return (
     <div className="p-6">
       <h1 className="text-2xl font-semibold mb-4">Sites</h1>
-      <ul>
+      <ul className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mt-6'>
         {sites.map((siteId) => (
-          <li key={siteId} className="mb-2">
-            <Link to={`/sites/${siteId}`} className="text-blue-500 underline">
-              {siteId}
+          <li key={siteId} className=" bg-purple-500 p-6 rounded-lg shadow-md text-center">
+            <Link to={`/sites/${siteId}`} className="text-white text-lg">
+              SITE {siteId.split("site")}
             </Link>
           </li>
         ))}
