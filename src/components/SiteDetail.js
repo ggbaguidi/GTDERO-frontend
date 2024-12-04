@@ -72,7 +72,7 @@ const SiteDetail = () => {
       }
       
       // Clean the "grid outage plan" string (remove square brackets, trim spaces)
-      const cleanedPlan = plan.replace(/[\[\]]/g, "").trim();
+      const cleanedPlan = plan.replace(/[[\]]/g, "").trim();
       
       // Return the length of the array after splitting by spaces
       return cleanedPlan.split(" ").length;
@@ -91,7 +91,7 @@ const SiteDetail = () => {
           }
           
           // Clean the "grid outage plan" string (remove square brackets, trim spaces)
-          const cleanedPlan = plan.replace(/[\[\]]/g, "").trim();
+          const cleanedPlan = plan.replace(/[[\]]/g, "").trim();
           
           // Split the string by spaces, convert each value to 1 (true) or 0 (false)
           return cleanedPlan.split(" ")  // Split the string by spaces

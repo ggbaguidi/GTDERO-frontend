@@ -17,6 +17,7 @@ import Common from './components/dashboard/Common';
 import SiteDetail from './components/SiteDetail';
 import StrategyDisplay from './components/StrategyDisplay';
 import UserManagement from './components/User';
+
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -27,6 +28,8 @@ import {
   Tooltip,
   Legend,
 } from 'chart.js';
+import Upload from './components/Upload';
+import Forecasting from './components/Forcast';
 
 ChartJS.register(
   CategoryScale,
@@ -60,6 +63,8 @@ function App() {
           <Route path="/sites/:siteId" element={<Common><SiteDetail /></Common>} />
           <Route path="/strategy" element={<Common><StrategyDisplay /></Common>} />
           <Route path="/users" element={<Common><UserManagement /></Common>} />
+          <Route path="/upload" element={<Common><Upload /></Common>} />
+          <Route path="/forcast" element={<Common><Forecasting /></Common>} />
         </Routes>
         <Footer />
       </div>
